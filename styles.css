@@ -27,7 +27,7 @@ header>div{
     margin: 5px;
     height: 300px;
     width: auto;
-    background-color: blue;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
 }
@@ -37,6 +37,7 @@ header>div{
 .item1{
     background-image: url("./img/category-1.jpg.webp");
     height: 678px;
+    background-position: top right 35%;
 }
 
 .item2{
@@ -58,10 +59,17 @@ header>div{
                 /* Tablets media querry */
 
 @media  (min-width: 576px) and (max-width: 990px){
+    .item2,.item3,.item4,.item5{
+        height: 300px;
+    }
+    .container{
+        display: grid;
+    }
     .second-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    
     
 }
 
