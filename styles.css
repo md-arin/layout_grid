@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+            /* Header area */
+
+header>div>h2,i{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    margin: 15px;
+}
+
+header>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.first-container{
+    display: grid;
+    grid-template-rows: auto;
+}
+.items{
+    margin: 5px;
+    height: 300px;
+    width: auto;
+    background-color: blue;
+    background-size: cover;
+    background-position: top center;
+}
+
+                /* background images */
+
+.item1{
+    background-image: url("./img/category-1.jpg.webp");
+    height: 678px;
+}
+
+.item2{
+    background-image: url("./img/category-2.jpg.webp");
+}
+
+.item3{
+    background-image: url("./img/category-3.jpg.webp");
+}
+
+.item4{
+    background-image: url("./img/category-4.jpg.webp");
+}
+
+.item5{
+    background-image: url("./img/category-5.jpg.webp");
+}           
+
+                /* Tablets media querry */
+
+@media  (min-width: 576px) and (max-width: 990px){
+    .second-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+                /* Desktop media querry */
+
+@media (min-width: 991px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .second-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
